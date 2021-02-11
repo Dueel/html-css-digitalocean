@@ -22,9 +22,7 @@ header{
 }
 
 section{
-  padding: 25px 0;
-  /* DEBUG:  */
-  min-height: 200px;
+  padding: 50px 0;
 }
 
 footer{
