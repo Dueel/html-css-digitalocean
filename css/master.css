@@ -19,7 +19,7 @@ nav{
 }
 
 header{
-  background-color: #0047C5;
+  background-image: url('../img/jumbo.svg');
   padding: 50px 0;
 }
 
@@ -73,11 +73,23 @@ ul>li>a{
 body{
   color: #031C4E;
   font-family: 'Barlow', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 img{
   max-height: 30px;
+}
+
+h1{
+  color: white;
+  font-size: 4.5em;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+h2{
+  font-weight: 600;
 }
 
 /* REGOLE SPECIFICHE */
@@ -97,5 +109,61 @@ nav .hidden-lg i{
   font-size: 20px;
   line-height: 40px;
   float: right;
+}
 
+header p{
+  color: #F3F5F9;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+#login{
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#login p{
+  color: #031C4E;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+h2 a{
+  color: #004AFF;
+}
+
+header button{
+  display: block;
+  width: 100%;
+  padding: 0.3em 0;
+  border-radius: 5px;
+  border: none;
+  position: relative;
+}
+
+button[name=create]{
+  color: white;
+  background-color: #579AFF;
+}
+
+button[name=google]{
+  background-color: white;
+  box-shadow: 2px 2px 1px lightgrey;
+}
+
+button img{
+  max-width: 25px;
+  position: absolute;
+  left: 25px;
+}
+
+button span{
+  line-height: 2em;
+}
+
+header form>*{
+  margin-bottom: 15px;
 }
