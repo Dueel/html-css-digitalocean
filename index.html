@@ -2,9 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/master.css">
-    <title></title>
   </head>
   <body>
 
@@ -14,13 +17,26 @@
         <div class="row">
 
           <div class="col-xs-5 col-md-3 col-lg-2">
-            logo
+            <a href="#"><img src="img/logo.png" alt=""> </a>
           </div>
-          <div  class="none-xs col-lg-4 col-lg-offset-1">
-            products customers community pricing
+          <div  class="visible-lg col-lg-4 col-lg-offset-1">
+            <ul class="ul-inline">
+              <li><a href="#">Products <i class="fas fa-chevron-down"></i></a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Community <i class="fas fa-chevron-down"></i></a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
           </div>
-          <div class="col-xs-1 col-xs-offset-6 col-md-offset-8 col-lg-3 col-lg-offset-2">
-            docs support logins
+          <div class="col-xs-1 col-xs-offset-6 col-md-offset-8 col-lg-4 col-lg-offset-1">
+            <ul class="ul-inline visible-lg">
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Support <i class="fas fa-chevron-down"></i></a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#" id="signup">Sign up</a></li>
+            </ul>
+            <div class="hidden-lg">
+              <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
           </div>
 
         </div>
@@ -126,14 +142,14 @@
             </div>
             <div class="row">
 
-              <div class="none-md col-md-1 col-md-offset-2">
-                left
+              <div class="hidden-xs col-md-1 col-md-offset-2">
+                left hidden
               </div>
               <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-0">
                 img
               </div>
-              <div class="none-md col-md-1">
-                right
+              <div class="hidden-xs col-md-1">
+                right hidden
               </div>
 
             </div>
@@ -180,13 +196,13 @@
           <div class="container">
             <div class="row">
 
-              <div class="none-md col-md-1 col-md-offset-2">
+              <div class="hidden-xs col-md-1 col-md-offset-2">
                 left
               </div>
               <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-0">
                 img
               </div>
-              <div class="none-md col-md-1">
+              <div class="hidden-xs col-md-1">
                 right
               </div>
 

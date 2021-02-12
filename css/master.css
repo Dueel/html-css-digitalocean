@@ -1,19 +1,21 @@
+/* STRUTTURA */
+/* DEBUG:  */
 [class*=col-]{
-  min-height: 100px;
-  background-color: rgba(125,0,125,0.5);
-  border: 2px solid red;
+  /* min-height: 50px;
+  max-height: 100px; */
+  /* background-color: rgba(125,0,125,0.1);
+  border: 1px solid red; */
 }
 
 nav{
+  padding: 10px 0;
   background-color: white;
+  font-weight: 600;
   /* position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 900; */
-
-  /* DEBUG:  */
-  min-height: 80px;
 }
 
 header{
@@ -21,15 +23,12 @@ header{
   padding: 50px 0;
 }
 
-section{
+section, footer{
   padding: 50px 0;
 }
 
 footer{
   background-color: #031C4E;
-
-  /* DEBUG:  */
-  min-height: 100px;
 }
 
 .grey{
@@ -38,6 +37,22 @@ footer{
 
 .gradient{
   background-image: linear-gradient(to bottom, #0047C5, #001E99);
+}
+
+.ul-inline{
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  float: right;
+}
+
+.ul-inline>li{
+  display: inline-block;
+  padding: 0 5px;
+}
+
+ul>li>a{
+  color: #031C4E;
 }
 
 @media all and (max-width: 1200px) {
@@ -52,4 +67,35 @@ footer{
   .none-md{
     display: none;
   }
+}
+
+/* REGOLE GENERALI */
+body{
+  color: #031C4E;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+}
+
+img{
+  max-height: 30px;
+}
+
+/* REGOLE SPECIFICHE */
+nav [class*=col-]>*{
+  line-height: 40px;
+}
+
+#signup{
+  color: #004AFF;
+  padding: 10px 15px;
+  border: 1px solid #004AFF;
+  border-radius: 5px;
+}
+
+nav .hidden-lg i{
+  color: #004AFF;
+  font-size: 20px;
+  line-height: 40px;
+  float: right;
+
 }
