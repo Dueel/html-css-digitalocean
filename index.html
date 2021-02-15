@@ -3,15 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/lib/12bool.css">
     <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
 
-    <!-- NAV -->
     <nav>
       <div class="container">
         <div class="row">
@@ -19,45 +18,47 @@
           <div class="col-xs-5 col-md-3 col-lg-2">
             <a href="#"><img src="img/logo.png" alt=""> </a>
           </div>
-          <div  class="visible-lg col-lg-4 col-lg-offset-1">
-            <ul class="ul-inline">
+          <div class="visible-lg col-lg-4 col-lg-offset-1">
+
+            <ul class="list-inline">
               <li><a href="#">Products <i class="fas fa-chevron-down"></i></a></li>
               <li><a href="#">Customers</a></li>
               <li><a href="#">Community <i class="fas fa-chevron-down"></i></a></li>
               <li><a href="#">Pricing</a></li>
             </ul>
+
           </div>
           <div class="col-xs-1 col-xs-offset-6 col-md-offset-8 col-lg-4 col-lg-offset-1">
-            <ul class="ul-inline visible-lg">
+
+            <ul class="list-inline visible-lg">
               <li><a href="#">Docs</a></li>
               <li><a href="#">Support <i class="fas fa-chevron-down"></i></a></li>
               <li><a href="#">Login</a></li>
               <li><a href="#" id="signup">Sign up</a></li>
             </ul>
-            <div class="hidden-lg">
-              <a href="#"><i class="fas fa-bars"></i></a>
-            </div>
+            <a href="#" class="hidden-lg"><i class="fas fa-bars"></i></a>
+
           </div>
 
         </div>
       </div>
     </nav>
 
-    <!-- HEADER -->
     <header>
       <div class="container">
         <div class="row">
 
           <div class="col-xs-12 col-md-7">
-            <h1>The simplest cloud platform for <br>developers &amp; teams</h1>
+            <h1>The simplest cloud platform for developers &amp; teams</h1>
             <p>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and business, whether you're running one virtual machine or ten thousand.</p>
+
           </div>
           <div class="col-xs-12 col-md-5">
             <div id="login">
               <h2>Deploy your app in seconds. <br><a href="#">Get Started now.</a></h2>
-              <form class="" action="index.html" method="post">
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <form action="index.html" method="post">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
                 <button type="button" name="create">Create your account</button>
                 <button type="button" name="google"><img src="img/google-icon.png" alt=""><span>Signup with Google</span></button>
                 <p>By signing up you agre to the <a href="#">Terms of service</a>.</p>
@@ -69,200 +70,226 @@
       </div>
     </header>
 
-    <!-- MAIN -->
     <main>
+      <!-- I - logos -->
+      <section class="bg-grey text-center">
+        <div class="container">
 
-        <!-- I - logos -->
-        <section class="grey">
-          <div class="container">
-            <div class="row">
+          <h3 class="">INNOVATIVE BUSINESSES TRUST DIGITALOCEAN</h3>
+          <div class="row">
 
-              <div class="col-xs-6 col-md-2">
-                logo
+            <div class="col-xs-6 col-md-2">
+              <div class="partners">
+                <img src="img/docker.svg" class="">
               </div>
-              <div class="col-xs-6 col-md-2">
-                logo
-              </div>
-              <div class="col-xs-6 col-md-2">
-                logo
-              </div>
-              <div class="col-xs-6 col-md-2">
-                logo
-              </div>
-              <div class="col-xs-6 col-md-2">
-                logo
-              </div>
-              <div class="col-xs-6 col-md-2">
-                logo
-              </div>
-
             </div>
-          </div>
-        </section>
-
-        <!-- II - Deploy and scale seamlessly -->
-        <section>
-          <div class="container">
-            <div class="row">
-
-              <div class="col-xs-12">
-                paragraph
+            <div class="col-xs-6 col-md-2">
+              <div class="partners">
+                <img src="img/gitlab.svg" alt="">
               </div>
-
             </div>
-
-            <div class="row">
-
-                <div class="col-xs-12 col-md-2 col-md-offset-1">
-                  aside
-                </div>
-
-                <div class="col-xs-12 col-md-8 col-md-offset-1">
-                  <div class="row">
-
-                    <div class="col-xs-12 col-md-6">
-                      cluster
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                      optimized
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                      one click
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                      global
-                    </div>
-
-                  </div>
-                </div>
-
+            <div class="col-xs-6 col-md-2">
+              <div class="partners">
+                <img src="img/slack.svg" alt="">
+              </div>
             </div>
-          </div>
-        </section>
-
-        <!-- III - Designed for developers -->
-        <section class="grey">
-          <div class="container">
-            <div class="row">
-
-              <div class="col-xs-12">
-                paragraph
+            <div class="col-xs-6 col-md-2">
+              <div class="partners">
+                <img src="img/hashicorp.svg" alt="">
               </div>
-
             </div>
-            <div class="row">
-
-              <div class="hidden-xs col-md-1 col-md-offset-2">
-                left hidden
+            <div class="col-xs-6 col-md-2">
+              <div class="partners">
+                <img src="img/hashicorp.svg" alt="">
               </div>
-              <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-0">
-                img
-              </div>
-              <div class="hidden-xs col-md-1">
-                right hidden
-              </div>
-
             </div>
-          </div>
-        </section>
-
-        <!-- IV - The feature your business needs -->
-        <section>
-          <div class="container">
-            <div class="row">
-
-              <div class="col-xs-12 col-md-4">
-                predictable pricing
+            <div class="col-xs-6 col-md-2">
+              <div class="partners">
+                <img src="img/splunklogo.svg" alt="">
               </div>
-              <div class="col-xs-12 col-md-4">
-                world-class service
-              </div>
-              <div class="col-xs-12 col-md-4">
-                reliable platform
-              </div>
-
             </div>
-          </div>
-        </section>
-
-        <!--V - Service your customers around the world -->
-        <section class="gradient">
-          <div class="container">
-            <div class="row">
-
-              <div class="col-xs-12 col-lg-6">
-                table
-              </div>
-              <div class="col-xs-12 col-lg-6">
-                table
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        <!-- VI - Development teams -->
-        <section class="grey">
-          <div class="container">
-            <div class="row">
-
-              <div class="hidden-xs col-md-1 col-md-offset-2">
-                left
-              </div>
-              <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-0">
-                img
-              </div>
-              <div class="hidden-xs col-md-1">
-                right
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        <!-- VII - Get started now -->
-        <section class="gradient">
-          <div class="container">
-            <div class="row">
-
-              <div class="col-xs-6 col-xs-offset-3 col-md-4 col-md-offset-4">
-                cta
-              </div>
-
-            </div>
-          </div>
-        </section>
-    </main>
-
-    <footer>
-      <div class="container">
-        <div class="row">
-
-          <div class="col-xs-12 col-lg-4">
 
           </div>
-          <div class="col-xs-12 col-lg-8">
-            <div class="row">
-
-              <div class="col-xs-12 col-md-6 col-lg-3">
-
-              </div>
-              <div class="col-xs-12 col-md-6 col-lg-3">
-
-              </div>
-              <div class="col-xs-12 col-md-6 col-lg-3">
-
-              </div>
-              <div class="col-xs-12 col-md-6 col-lg-3">
-
-              </div>
-
-            </div>
+          <div>
+            <a href="#">View customer stories &gt;</a>
           </div>
 
         </div>
-      </div>
-    </footer>
+      </section>
+
+      <!-- II - Deploy and scale seamlessly -->
+      <section id="deploy">
+        <div class="container">
+
+          <div class="text-center">
+            <h2>Deploy and scale seamlessly</h2>
+            <p class="subtitle">Our optimized configuration process saves your team time when running and scaling distributed applications, AI &amp; machine learning workloads, hosted services, client websites, or CI/CD enviroments.</p>
+          </div>
+          <div class="row">
+
+            <div class="col-xs-12 col-md-2 col-md-offset-1">
+              <aside class="contained">
+                <ul class="list-block">
+                  <li><a href="#">Deploy</a></li>
+                  <li><a href="#">Manage</a></li>
+                  <li><a href="#">Secure</a></li>
+                  <li><a href="#">Scale</a></li>
+                  <li><a href="#">Monitor</a></li>
+                </ul>
+              </aside>
+            </div>
+            <div class="col-xs-12 col-md-8">
+              <div class="row">
+
+                <div class="col-xs-12 col-md-6">
+                  <div class="contained">
+                    <img src="img/cluster-deploy.svg" class="small-img">
+                    <h4>Cluster deployments</h4>
+                    <p class="small-p">Provision multiple Droplets (virtual machines) in seconds with our control panle, CLI, or directly against your API.</p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div class="contained">
+                    <img src="img/optimized-compute.svg" class="small-img">
+                    <h4>Optimized compute types</h4>
+                    <p class="small-p">Het the compute resources you need with Standard or Optimized Droplets.</p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+
+                <div class="col-xs-12 col-md-6">
+                  <div class="contained">
+                    <img src="img/one-click.svg" class="small-img">
+                    <h4>One-click apps</h4>
+                    <p class="small-p">Skip the install and configuration process with pre-built open sources images supporting Rails, Cassandra, Docker, and more.</p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div class="contained">
+                    <img src="img/global.svg" class="small-img">
+                    <h4>Global availability</h4>
+                    <p class="small-p">Deploy to any of our data center regions around the world.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- III - Designed for developers -->
+      <section class="bg-grey">
+        <div class="container">
+
+          <div class="text-center">
+            <h2>Designed for developers</h2>
+            <p class="subtitle">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+          </div>
+          <div class="row">
+            <div class="visible-xs visible-md col-md-1 col-md-offset-2">
+              left
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-0">
+              <img src="img/screenshot-create-droplet-12336b41.jpg" alt="">
+            </div>
+            <div class="visible-xs visible-md col-md-1">
+              right
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- IV - The feature your business needs -->
+      <section>
+        <div class="container">
+
+          <h2 class="text-center">The feature your business needs</h2>
+          <div class="row">
+
+            <div class="col-xs-12 col-md-4">
+              <img src="" alt="">
+              <h4>title</h4>
+              <p>p</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <img src="" alt="">
+              <h4>title</h4>
+              <p>p</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <img src="" alt="">
+              <h4>title</h4>
+              <p>p</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!--V - Service your customers around the world -->
+      <section class="bg-gradient">
+        <div class="container">
+
+          <h2 class="text-center">Service your customers around the world</h2>
+          <div class="row">
+
+            <div class="col-xs-12 col-lg-6">
+              table
+            </div>
+            <div class="col-xs-12 col-lg-6">
+              table
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- VI - Development teams -->
+      <section>
+        <div class="container">
+
+          <h2 class="text-center">Development teams love DigitalOcean</h2>
+          <div class="row">
+
+            <div class="visible-xs visible-md col-md-1 col-md-offset-2">
+              left
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-0">
+              img
+            </div>
+            <div class="visible-xs visible-md col-md-1">
+              right
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- VII - Get started now -->
+      <section class="bg-gradient">
+        <div class="container">
+
+          <h2 class="text-center">Get started now</h2>
+          <div class="row">
+
+            <div class="col-xs-6 col-xs-offset-3 col-md-4 col-md-offset-4">
+              cta
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
 
   </body>
 </html>

@@ -1,100 +1,90 @@
-/* STRUTTURA */
 /* DEBUG:  */
 [class*=col-]{
-  /* min-height: 50px;
-  max-height: 100px; */
-  /* background-color: rgba(125,0,125,0.1);
-  border: 1px solid red; */
+  /* min-height: 100px; */
+  /* background-color: rgba(255,0,0,0.2); */
+  /* border: 1px solid red; */
+}
+section{
+  padding: 50px 0;
+}
+
+
+body{
+  font-family: 'Barlow', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+img{
+  max-width: 100%;
+}
+
+h2{
+  font-size: 30px;
+  color: #031C4E;
+}
+
+h3{
+  color: #6F7B97;
+}
+
+h4{
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+a:not(nav a){
+  color: #004AFF;
+}
+
+.bg-grey{
+  background-color: #F3F5F9;
+}
+
+.bg-gradient{
+  background-image: linear-gradient(to bottom, #0047C5, #001E99);
+}
+
+.subtitle{
+  color: #6F7B97;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.3em;
+  margin-top: 10px;
+}
+
+.small-p{
+  color: #6F7B97;
+  font-size: 1rem;
+
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+/***** SPECIFIC RULES *****/
+
+/* NAV */
+nav [class*=col-]>*{
+  line-height: 50px;
 }
 
 nav{
   padding: 10px 0;
-  background-color: white;
-  font-weight: 600;
-  /* position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 900; */
+  background: white;
 }
 
-header{
-  background-image: url('../img/jumbo.svg');
-  padding: 50px 0;
-}
-
-section, footer{
-  padding: 50px 0;
-}
-
-footer{
-  background-color: #031C4E;
-}
-
-.grey{
-  background-color: #F3F5F9;
-}
-
-.gradient{
-  background-image: linear-gradient(to bottom, #0047C5, #001E99);
-}
-
-.ul-inline{
-  list-style: none;
-  margin-bottom: 0;
-  padding-left: 0;
+nav .list-inline.visible-lg,
+nav a.hidden-lg{
   float: right;
 }
 
-.ul-inline>li{
-  display: inline-block;
-  padding: 0 5px;
-}
-
-ul>li>a{
-  color: #031C4E;
-}
-
-@media all and (max-width: 1200px) {
-
-  .none-xs{
-    display: none;
-  }
-}
-
-@media all and (max-width: 992px) {
-
-  .none-md{
-    display: none;
-  }
-}
-
-/* REGOLE GENERALI */
-body{
-  color: #031C4E;
-  font-family: 'Barlow', sans-serif;
-  font-weight: 600;
-}
-
-img{
-  max-height: 30px;
-}
-
-h1{
-  color: white;
-  font-size: 4.5em;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-h2{
-  font-weight: 600;
-}
-
-/* REGOLE SPECIFICHE */
-nav [class*=col-]>*{
-  line-height: 40px;
+nav img{
+  vertical-align: middle;
 }
 
 #signup{
@@ -106,39 +96,58 @@ nav [class*=col-]>*{
 
 nav .hidden-lg i{
   color: #004AFF;
-  font-size: 20px;
-  line-height: 40px;
-  float: right;
+  font-size: 40px;
+  vertical-align: middle;
+}
+
+/* HEADER */
+header{
+  background-image: url('../img/jumbo.svg');
+  padding: 50px 0;
+  color: white;
+}
+
+header h1{
+  font-size: 60px;
 }
 
 header p{
-  color: #F3F5F9;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 1.5em;
+  margin-top: 20px;
+}
+
+header h1,
+header h1+p{
+  margin-right: 50px;
 }
 
 #login{
   border-radius: 5px;
   background-color: white;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
 }
 
 #login p{
   color: #031C4E;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 
-h2 a{
-  color: #004AFF;
-}
-
-header button{
+#login input{
   display: block;
   width: 100%;
-  padding: 0.3em 0;
+  padding: 0.5em ;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+#login button{
+  display: block;
+  width: 100%;
+  padding: 0.7em 0;
+  font-weight: 600;
   border-radius: 5px;
   border: none;
   position: relative;
@@ -151,7 +160,7 @@ button[name=create]{
 
 button[name=google]{
   background-color: white;
-  box-shadow: 2px 2px 1px lightgrey;
+  box-shadow: 2px 2px 2px lightgrey;
 }
 
 button img{
@@ -164,6 +173,50 @@ button span{
   line-height: 2em;
 }
 
-header form>*{
+#login h2,
+#login input,
+#login button{
+  margin-bottom: 10px;
+}
+
+/* MAIN */
+
+/* I section */
+.partners{
+  /* height: 100px; */
+  /* position: relative; */
+  padding-left: 10px;
+  margin: 20px 0;
+}
+
+.partners img{
+  width: 100%;
+  line-height: 150px;
+
+  /* position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+#deploy .contained{
+  margin-top: 60px;
+}
+
+section aside{
+  border-left: 1.5px solid lightgrey;
+  padding: 10px;
+}
+
+aside ul li{
   margin-bottom: 15px;
+}
+
+aside ul li:last-child{
+  margin-bottom: 0;
+}
+
+aside li a{
+  color: #6F7B97;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
