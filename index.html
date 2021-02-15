@@ -182,7 +182,7 @@
       </section>
 
       <!-- III - Designed for developers -->
-      <section class="bg-grey">
+      <section id="designed" class="bg-grey">
         <div class="container">
 
           <div class="text-center">
@@ -191,13 +191,19 @@
           </div>
           <div class="row">
             <div class="visible-xs visible-md col-md-1 col-md-offset-2">
-              left
+              <div class="contained text-center">
+                <i class="fas fa-chevron-left"></i>
+              </div>
             </div>
             <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-0">
-              <img src="img/screenshot-create-droplet-12336b41.jpg" alt="">
+              <div class="contained">
+                <img src="img/screenshot-create-droplet-12336b41.jpg" alt="">
+              </div>
             </div>
             <div class="visible-xs visible-md col-md-1">
-              right
+              <div class="contained text-center">
+                <i class="fas fa-chevron-right"></i>
+              </div>
             </div>
 
           </div>
@@ -205,26 +211,35 @@
       </section>
 
       <!-- IV - The feature your business needs -->
-      <section>
+      <section id="features">
         <div class="container">
 
           <h2 class="text-center">The feature your business needs</h2>
           <div class="row">
 
             <div class="col-xs-12 col-md-4">
-              <img src="" alt="">
-              <h4>title</h4>
-              <p>p</p>
+              <div class="contained">
+                <img src="img/pred-pricing.svg" class="small-img">
+                <h4>Predictable pricing</h4>
+                <p class="small-p">Leave complex pricing structures behind. Always know what you'll you pay per month with a flat, industry-leading pricing structure.</p>
+                <a href="#">Pricing &gt;</a>
+              </div>
             </div>
             <div class="col-xs-12 col-md-4">
-              <img src="" alt="">
-              <h4>title</h4>
-              <p>p</p>
+              <div class="contained">
+                <img src="img/world-class.svg" class="small-img">
+                <h4>World-class service</h4>
+                <p class="small-p">Free round-the-clock technical support for all customers. You'll feel the love.</p>
+                <a href="#">Support &gt;</a>
+              </div>
             </div>
             <div class="col-xs-12 col-md-4">
-              <img src="" alt="">
-              <h4>title</h4>
-              <p>p</p>
+              <div class="contained">
+                <img src="img/reliable-platform.svg" class="small-img">
+                <h4>Reliable platform</h4>
+                <p class="small-p">More than 100,00 developer teams worldwide trust DigitalOcean to suport their business with a 99.99% uptime SLA for all services.</p>
+                <a href="#">Security &gt;</a>
+              </div>
             </div>
 
           </div>
@@ -240,7 +255,13 @@
           <div class="row">
 
             <div class="col-xs-12 col-lg-6">
-              table
+              <table>
+                <tr>
+                  <td>AMS2</td>
+                  <td class="table-city">Amsterdam, Netherlands</td>
+                  <td><a href="#">Test speed &gt;</a></td>
+                </tr>
+              </table>
             </div>
             <div class="col-xs-12 col-lg-6">
               table
@@ -290,6 +311,79 @@
       </section>
 
     </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-xs-12 col-lg-4">
+            aside
+          </div>
+          <div class="col-xs-12 col-lg-8">
+            <div class="row">
+
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                <ul class="list-block">
+                  <li><a href="#"><h4>Company</h4></a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Leadership</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Partners Network</a></li>
+                  <li><a href="#">Referral Program</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">Legal &amp; Security</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                <ul class="list-block">
+                  <li><a href="#"><h4>Products</h4></a></li>
+                  <li><a href="#">Droplets</a></li>
+                  <li><a href="#">Spaces</a></li>
+                  <li><a href="#">Kubernetes</a></li>
+                  <li><a href="#">Load Balancers</a></li>
+                  <li><a href="#">Block Storage</a></li>
+                  <li><a href="#">Tools &amp; Integrations</a></li>
+                  <li><a href="#">One-Click Apps</a></li>
+                  <li><a href="#">API</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Documentation</a></li>
+                  <li><a href="#">Realease Notes</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                <ul class="list-block">
+                  <li><a href="#"><h4>Community</h4></a></li>
+                  <li><a href="#">Tutorials</a></li>
+                  <li><a href="#">Meetups</a></li>
+                  <li><a href="#">Q&amp;A</a></li>
+                  <li><a href="#">Write for Donations</a></li>
+                  <li><a href="#">Droplets for Demos</a></li>
+                  <li><a href="#">Hatch</a></li>
+                  <li><a href="#">Shop Swag</a></li>
+                  <li><a href="#">Research Program</a></li>
+                  <li><a href="#">Currents Research</a></li>
+                  <li><a href="#">Open Source</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                <ul class="list-block">
+                  <li><a href="#"><h4>Support</h4></a></li>
+                  <li><a href="#">Contact Support</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Network Status</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
 
   </body>
 </html>

@@ -4,7 +4,7 @@
   /* background-color: rgba(255,0,0,0.2); */
   /* border: 1px solid red; */
 }
-section{
+header, section, footer{
   padding: 50px 0;
 }
 
@@ -47,7 +47,12 @@ a:not(nav a){
 }
 
 .bg-gradient{
+  color: white;
   background-image: linear-gradient(to bottom, #0047C5, #001E99);
+}
+
+.bg-gradient h2{
+  color: white;
 }
 
 .subtitle{
@@ -103,7 +108,6 @@ nav .hidden-lg i{
 /* HEADER */
 header{
   background-image: url('../img/jumbo.svg');
-  padding: 50px 0;
   color: white;
 }
 
@@ -198,6 +202,8 @@ button span{
   left: 50%;
   transform: translate(-50%, -50%); */
 }
+
+/* II section */
 #deploy .contained{
   margin-top: 60px;
 }
@@ -218,5 +224,69 @@ aside ul li:last-child{
 aside li a{
   color: #6F7B97;
   font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* III section */
+#designed .fas{
+  font-size: 25px;
+  text-align: center;
+}
+
+.fas.fa-chevron-right{
+  color: #031C4E;
+}
+
+.fas.fa-chevron-left{
+  color: #6F7B97;
+}
+
+#designed .contained{
+  /* width: 100%;
+  height: 350px; */
+}
+
+#designed .contained{
+  margin-top: 60px;
+}
+
+/* IV section */
+#features .contained{
+  margin-top: 40px;
+}
+
+#features .contained a{
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* V section */
+table,
+table tr{
+  width: 100%;
+}
+
+table tr{
+  display: inline-block;
+  border-bottom: 1px solid white;
+}
+
+table td>a{
+  color: #00D5D2;
+  display: inline-block;
+  float: right;
+}
+
+/* FOOTER */
+footer{
+  background-color: #031C4E;
+}
+
+footer li{
+  margin-bottom: 10px;
+}
+
+footer li>a{
+  color: #A6ADBD;
   font-weight: 500;
 }
