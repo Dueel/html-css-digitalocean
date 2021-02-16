@@ -116,6 +116,7 @@ header h1{
 }
 
 header p{
+  color: #BBCCFF;
   font-size: 1.5rem;
   font-weight: 400;
   margin-top: 20px;
@@ -261,6 +262,11 @@ aside li a{
 }
 
 /* V section */
+table{
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
 table,
 table tr{
   width: 100%;
@@ -269,12 +275,30 @@ table tr{
 table tr{
   display: inline-block;
   border-bottom: 1px solid white;
+  padding: 10px 15px;
+}
+
+table tr:last-child{
+  border-bottom: none;
+}
+
+table td{
+  display: inline-block;
+}
+
+table td:last-child{
+  float: right;
 }
 
 table td>a{
   color: #00D5D2;
-  display: inline-block;
-  float: right;
+  font-weight: 500;
+}
+
+.table-city{
+  color: #BBCCFF;
+  font-weight: 500;
+  margin-left: 50px;
 }
 
 /* FOOTER */
