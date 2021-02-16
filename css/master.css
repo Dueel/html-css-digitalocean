@@ -301,9 +301,35 @@ table td>a{
   margin-left: 50px;
 }
 
+/* VII section */
+#get-started{
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
 /* FOOTER */
 footer{
+  color: #A6ADBD;
   background-color: #031C4E;
+}
+
+footer img{
+  margin-bottom: 10px;
+}
+
+footer p:last-of-type{
+  color: #6F7B97;
+}
+
+footer ul{
+  margin-top: 10px;
+}
+
+footer h4{
+  color: white;
 }
 
 footer li{
