@@ -127,20 +127,20 @@ header h1+p{
   margin-right: 50px;
 }
 
-#login{
+.white-board{
   border-radius: 5px;
   background-color: white;
   text-align: center;
   padding: 30px;
 }
 
-#login p{
+header .white-board p{
   color: #031C4E;
   font-size: 14px;
   font-weight: 600;
 }
 
-#login input{
+header .white-board input{
   display: block;
   width: 100%;
   padding: 0.5em ;
@@ -148,7 +148,7 @@ header h1+p{
   border-radius: 5px;
 }
 
-#login button{
+header .white-board button{
   display: block;
   width: 100%;
   padding: 0.7em 0;
@@ -178,9 +178,9 @@ button span{
   line-height: 2em;
 }
 
-#login h2,
-#login input,
-#login button{
+header .white-board h2,
+header .white-board input,
+header .white-board button{
   margin-bottom: 10px;
 }
 
@@ -229,11 +229,6 @@ aside li a{
 }
 
 /* III section */
-#designed .fas{
-  font-size: 25px;
-  text-align: center;
-}
-
 .fas.fa-chevron-right{
   color: #031C4E;
 }
@@ -242,13 +237,29 @@ aside li a{
   color: #6F7B97;
 }
 
-#designed .contained{
-  /* width: 100%;
-  height: 350px; */
+.box::after{
+  content: '';
+  display: table;
+  clear:both;
 }
 
-#designed .contained{
-  margin-top: 60px;
+.box{
+  margin-top: 40px;
+}
+
+.slide{
+  font-size: 12px;
+  text-align: center;
+  color: #004AFF;
+  margin: 20px auto 0;
+}
+
+.slide .far{
+  margin-left: 2px;
+}
+
+.slide .far:first-child{
+  margin-left: 0;
 }
 
 /* IV section */
@@ -299,6 +310,49 @@ table td>a{
   color: #BBCCFF;
   font-weight: 500;
   margin-left: 50px;
+}
+
+/* VI section */
+#development .box{
+  position: relative;
+}
+
+.orange{
+  height: 100px;
+}
+
+.direction{
+  position: relative;
+  height: 312px;
+}
+
+.direction .fas{
+  font-size: 40px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#development .white-board{
+  padding: 50px 10px;
+}
+
+#development h3{
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+#development blockquote span{
+  font-weight: 500;
+}
+
+#development .white-board>*{
+  margin-bottom: 15px;
+}
+
+#development .white-board blockquote{
+  margin-bottom: 30px;
 }
 
 /* VII section */
